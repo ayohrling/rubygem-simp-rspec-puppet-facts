@@ -1,360 +1,161 @@
 {
-  "acpid_enabled": false,
   "aio_agent_version": "1.8.3",
   "architecture": "x86_64",
-  "auditd_version": "2.7.6",
   "augeas": {
     "version": "1.4.0"
   },
-  "augeasprovider_grub_version": 2,
   "augeasversion": "1.4.0",
-  "bios_release_date": "01/01/2011",
-  "bios_vendor": "Google",
-  "bios_version": "Google",
-  "blockdevice_sda_model": "PersistentDisk",
-  "blockdevice_sda_size": 10737418240,
-  "blockdevice_sda_vendor": "Google",
-  "blockdevices": "sda",
-  "boardassettag": "A56C29CF-E7D0-25A0-1DB2-B9BD20258577",
-  "boardmanufacturer": "Google",
-  "boardproductname": "Google Compute Engine",
-  "boot_dir_uuid": "ba747b8e-efdb-4a17-bd5b-b80ef667b244",
+  "bios_release_date": "08/24/2006",
+  "bios_vendor": "Xen",
+  "bios_version": "4.2.amazon",
+  "blockdevice_xvda_size": 10737418240,
+  "blockdevices": "xvda",
   "chassistype": "Other",
-  "cmdline": {
-    "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-514.26.2.el7.x86_64",
-    "root": "UUID",
-    "ro": "",
-    "crashkernel": "auto",
-    "console": "ttyS0,38400n8"
-  },
-  "cpuinfo": {
-    "processor0": {
-      "vendor_id": "GenuineIntel",
-      "cpu_family": "6",
-      "model": "63",
-      "model_name": "Intel(R) Xeon(R) CPU @ 2.30GHz",
-      "stepping": "0",
-      "microcode": "0x1",
-      "cpu_MHz": "2299.998",
-      "cache_size": "46080 KB",
-      "physical_id": "0",
-      "siblings": "1",
-      "core_id": "0",
-      "cpu_cores": "1",
-      "apicid": "0",
-      "initial_apicid": "0",
-      "fpu": "yes",
-      "fpu_exception": "yes",
-      "cpuid_level": "13",
-      "wp": "yes",
-      "flags": [
-        "fpu",
-        "vme",
-        "de",
-        "pse",
-        "tsc",
-        "msr",
-        "pae",
-        "mce",
-        "cx8",
-        "apic",
-        "sep",
-        "mtrr",
-        "pge",
-        "mca",
-        "cmov",
-        "pat",
-        "pse36",
-        "clflush",
-        "mmx",
-        "fxsr",
-        "sse",
-        "sse2",
-        "ss",
-        "ht",
-        "syscall",
-        "nx",
-        "pdpe1gb",
-        "rdtscp",
-        "lm",
-        "constant_tsc",
-        "rep_good",
-        "nopl",
-        "xtopology",
-        "nonstop_tsc",
-        "eagerfpu",
-        "pni",
-        "pclmulqdq",
-        "ssse3",
-        "fma",
-        "cx16",
-        "sse4_1",
-        "sse4_2",
-        "x2apic",
-        "movbe",
-        "popcnt",
-        "aes",
-        "xsave",
-        "avx",
-        "f16c",
-        "rdrand",
-        "hypervisor",
-        "lahf_lm",
-        "abm",
-        "fsgsbase",
-        "tsc_adjust",
-        "bmi1",
-        "avx2",
-        "smep",
-        "bmi2",
-        "erms",
-        "xsaveopt"
-      ],
-      "bogomips": "4599.99",
-      "clflush_size": "64",
-      "cache_alignment": "64",
-      "address_sizes": "46 bits physical, 48 bits virtual",
-      "power_management": "power management"
-    }
-  },
-  "defaultgateway": "10.0.2.2",
-  "defaultgatewayiface": "eth0",
-  "dhcp_servers": {
-    "eth0": "10.0.2.2",
-    "system": "10.0.2.2"
-  },
   "disks": {
-    "sda": {
-      "model": "PersistentDisk",
+    "xvda": {
       "size": "10.00 GiB",
-      "size_bytes": 10737418240,
-      "vendor": "Google"
+      "size_bytes": 10737418240
     }
   },
   "dmi": {
     "bios": {
-      "release_date": "01/01/2011",
-      "vendor": "Google",
-      "version": "Google"
-    },
-    "board": {
-      "asset_tag": "A56C29CF-E7D0-25A0-1DB2-B9BD20258577",
-      "manufacturer": "Google",
-      "product": "Google Compute Engine"
+      "release_date": "08/24/2006",
+      "vendor": "Xen",
+      "version": "4.2.amazon"
     },
     "chassis": {
       "type": "Other"
     },
-    "manufacturer": "Google",
+    "manufacturer": "Xen",
     "product": {
-      "name": "Google Compute Engine",
-      "serial_number": "GoogleCloud-A56C29CFE7D025A01DB2B9BD20258577",
-      "uuid": "A56C29CF-E7D0-25A0-1DB2-B9BD20258577"
+      "name": "HVM domU"
     }
   },
   "domain": "example.com",
-  "facterversion": "3.5.1",
-  "filesystems": "xfs",
-  "fips_ciphers": [
-    "ECDHE-RSA-AES256-GCM-SHA384",
-    "ECDHE-ECDSA-AES256-GCM-SHA384",
-    "ECDHE-RSA-AES256-SHA384",
-    "ECDHE-ECDSA-AES256-SHA384",
-    "ECDHE-RSA-AES256-SHA",
-    "ECDHE-ECDSA-AES256-SHA",
-    "DHE-DSS-AES256-GCM-SHA384",
-    "DHE-RSA-AES256-GCM-SHA384",
-    "DHE-RSA-AES256-SHA256",
-    "DHE-DSS-AES256-SHA256",
-    "DHE-RSA-AES256-SHA",
-    "DHE-DSS-AES256-SHA",
-    "AECDH-AES256-SHA",
-    "ADH-AES256-GCM-SHA384",
-    "ADH-AES256-SHA256",
-    "ADH-AES256-SHA",
-    "ECDH-RSA-AES256-GCM-SHA384",
-    "ECDH-ECDSA-AES256-GCM-SHA384",
-    "ECDH-RSA-AES256-SHA384",
-    "ECDH-ECDSA-AES256-SHA384",
-    "ECDH-RSA-AES256-SHA",
-    "ECDH-ECDSA-AES256-SHA",
-    "AES256-GCM-SHA384",
-    "AES256-SHA256",
-    "AES256-SHA",
-    "ECDHE-RSA-AES128-GCM-SHA256",
-    "ECDHE-ECDSA-AES128-GCM-SHA256",
-    "ECDHE-RSA-AES128-SHA256",
-    "ECDHE-ECDSA-AES128-SHA256",
-    "ECDHE-RSA-AES128-SHA",
-    "ECDHE-ECDSA-AES128-SHA",
-    "DHE-DSS-AES128-GCM-SHA256",
-    "DHE-RSA-AES128-GCM-SHA256",
-    "DHE-RSA-AES128-SHA256",
-    "DHE-DSS-AES128-SHA256",
-    "DHE-RSA-AES128-SHA",
-    "DHE-DSS-AES128-SHA",
-    "AECDH-AES128-SHA",
-    "ADH-AES128-GCM-SHA256",
-    "ADH-AES128-SHA256",
-    "ADH-AES128-SHA",
-    "ECDH-RSA-AES128-GCM-SHA256",
-    "ECDH-ECDSA-AES128-GCM-SHA256",
-    "ECDH-RSA-AES128-SHA256",
-    "ECDH-ECDSA-AES128-SHA256",
-    "ECDH-RSA-AES128-SHA",
-    "ECDH-ECDSA-AES128-SHA",
-    "AES128-GCM-SHA256",
-    "AES128-SHA256",
-    "AES128-SHA",
-    "ECDHE-RSA-DES-CBC3-SHA",
-    "ECDHE-ECDSA-DES-CBC3-SHA",
-    "EDH-RSA-DES-CBC3-SHA",
-    "EDH-DSS-DES-CBC3-SHA",
-    "AECDH-DES-CBC3-SHA",
-    "ADH-DES-CBC3-SHA",
-    "ECDH-RSA-DES-CBC3-SHA",
-    "ECDH-ECDSA-DES-CBC3-SHA",
-    "DES-CBC3-SHA",
-    "KRB5-DES-CBC3-SHA"
-  ],
-  "fips_enabled": false,
-  "fqdn": "foo.example.com",
-  "fullrun": "false",
-  "gce": {
-    "instance": {
-      "attributes": {
-        "custom": "metadata",
-        "testing": "foobarbaz"
-      },
-      "description": "",
-      "disks": [
-        {
-          "deviceName": "persistent-disk-0",
-          "index": 0,
-          "mode": "READ_WRITE",
-          "type": "PERSISTENT"
-        }
-      ],
-      "hostname": "i-2017080319-172e9738.c.beaker-testing.internal",
-      "id": 8785617852644069240,
-      "image": "",
-      "licenses": [
-        {
-          "id": "1000006"
-        }
-      ],
-      "machineType": "g1-small",
-      "maintenanceEvent": "NONE",
-      "name": "i-2017080319-172e9738",
-      "networkInterfaces": "10.0.2.15",
-      "scheduling": {
-        "automaticRestart": "TRUE",
-        "onHostMaintenance": "MIGRATE",
-        "preemptible": "FALSE"
-      },
-      "serviceAccounts": {
-        "595254898640-compute@developer.gserviceaccount.com": {
-          "aliases": [
-            "default"
-          ],
-          "email": "595254898640-compute@developer.gserviceaccount.com",
-          "scopes": [
-            "https://www.googleapis.com/auth/monitoring",
-            "https://www.googleapis.com/auth/compute"
-          ]
-        },
-        "default": {
-          "aliases": [
-            "default"
-          ],
-          "email": "595254898640-compute@developer.gserviceaccount.com",
-          "scopes": [
-            "https://www.googleapis.com/auth/monitoring",
-            "https://www.googleapis.com/auth/compute"
-          ]
-        }
-      },
-      "tags": [
-        "simp-rspec-puppet-facts",
-        "temporary",
-        "vagrant"
-      ],
-      "zone": "us-east1-b"
+  "ec2_metadata": {
+    "ami-id": "ami-91d649f0",
+    "ami-launch-index": "0",
+    "ami-manifest-path": "(unknown)",
+    "block-device-mapping": {
+      "ami": "/dev/sda1",
+      "root": "/dev/sda1"
     },
-    "project": {
-      "attributes": {
-        "google-compute-default-region": "us-east1",
-        "sshKeys": [
-          "gce_vagrant:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZYWTuR/11oPusUD+aWUy36KTkWQIh1OvScrHSd53hg30DSDRuh2+fkf1p42/O4rIu/AtWEF1f+7U6yoRoZWfUU7YF0TIEdj6UL3DNedsH+kDuLyoLKxngBv8hn1NLrDpC+FbfzZxCFZVzkxiwJWbGHXRDPRfc3q28ZjFr4ckq25t9K9J7xF2SvMkAGCPR4SwyIhcx/02uWBF3DVpoOmVwbQUma1goDjWd9PMEslDW9vawoVDKp9YF3lE/+y3Vyk8KiLuMHg8JEpa9ydGOanPjXVAR+7dmp3DmZ0nqr6MiasTsQC1bzoUIqZgxurySyrCnLQziT//OJ2fdVsSP+7sH gce_vagrant"
-        ]
-      },
-      "numericProjectId": 595254898640,
-      "projectId": "beaker-testing"
+    "events": {
+      "maintenance": {
+        "history": "[]",
+        "scheduled": "[]"
+      }
+    },
+    "hostname": "ip-172-31-9-8.us-gov-west-1.compute.internal",
+    "instance-action": "none",
+    "instance-id": "i-0466979bd4f202216",
+    "instance-type": "t2.micro",
+    "local-hostname": "ip-172-31-9-8.us-gov-west-1.compute.internal",
+    "local-ipv4": "172.31.9.8",
+    "mac": "06:33:83:31:d8:08",
+    "metrics": {
+      "vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    },
+    "network": {
+      "interfaces": {
+        "macs": {
+          "06:33:83:31:d8:08": {
+            "device-number": "0",
+            "interface-id": "eni-e49a45ce",
+            "ipv4-associations": {
+              "160.1.5.58": "172.31.9.8"
+            },
+            "local-hostname": "ip-172-31-9-8.us-gov-west-1.compute.internal",
+            "local-ipv4s": "172.31.9.8",
+            "mac": "06:33:83:31:d8:08",
+            "owner-id": "061137851122",
+            "public-hostname": "ec2-160-1-5-58.us-gov-west-1.compute.amazonaws.com",
+            "public-ipv4s": "160.1.5.58",
+            "security-group-ids": "sg-e60b5d82",
+            "security-groups": "launch-wizard-47",
+            "subnet-id": "subnet-dc84aca8",
+            "subnet-ipv4-cidr-block": "172.31.0.0/20",
+            "vpc-id": "vpc-6df9f00f",
+            "vpc-ipv4-cidr-block": "172.31.0.0/16",
+            "vpc-ipv4-cidr-blocks": "172.31.0.0/16"
+          }
+        }
+      }
+    },
+    "placement": {
+      "availability-zone": "us-gov-west-1b"
+    },
+    "profile": "default-hvm",
+    "public-hostname": "ec2-160-1-5-58.us-gov-west-1.compute.amazonaws.com",
+    "public-ipv4": "160.1.5.58",
+    "public-keys": {
+      "0": {
+        "openssh-key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxmygebI20gcQ7rN1zLKDtL99i1fj9W90YU0MWJkqLUMuWHqvoMcF8AK9kE96T9gs7tCZzjF7ZQR51C9OWPa1a3a3ppSwQ3wmV9sTe0J7iX6HoLTcoKu15XcdjI/nhGILdHPs0NUU1OMT+15yW5h+L7/CXpXMzDcYT+4Tul6nhQehtY1mATky9HSXW3SHFrj2BSAONaZPieAHGI1yA2qD8GGkaxY/MQms6RL2D9oanrcyF11O5BfR0rYe85PB9o16i3ABz0zqgUyjEr+sVTmg8JULlwCaZ7CmWWjF3GXeqs1qybQsVZ5kxTZpUbdx4VXG5CZhJcx70NcnKKhOuZ0I9UiPNuoHU/Xfy9y8IecGHB6yZDiBJIn1OCpX/xzxQ5HE18YNuj0lQwV+8qvvndwqneMIick6O+eWlnRvUyxqRkSUGNSTUlqK4jnUlav5F+WQwDzAsmpM/Y6G2dbiGgUivCJTyrOdHi60K232VWsN0CrBgcpIJZ8C/5+UKM1FF7ONZyuplY1f/N27xpKuymhgu5VAzVeNShl5fxo9QE7fAZSLKqLwSmU7w13PjUKSaKr3YCxu4xYTML/QGj+/LqzUkXWiup1pDHoLg+D6y9Ea9POrJFrWU78GHIqrXxo2pd833q4zxF7TDVCHd95L6d/XAd2IfVfDwrdeTB3dJbVNA2w== AdamYohrling"
+      }
+    },
+    "reservation-id": "r-046cf04c5f25671e1",
+    "security-groups": "launch-wizard-47",
+    "services": {
+      "domain": "amazonaws.com",
+      "partition": "aws-us-gov"
     }
   },
-  "gid": "root",
-  "grub_version": "2.02~beta2",
+  "facterversion": "3.5.1",
+  "filesystems": "iso9660,xfs",
+  "fqdn": "foo.example.com",
+  "gid": "ec2-user",
   "hardwareisa": "x86_64",
   "hardwaremodel": "x86_64",
-  "has_tpm": false,
-  "haveged_startup_provider": "systemd",
   "hostname": "foo",
-  "id": "root",
+  "id": "ec2-user",
   "identity": {
-    "gid": 0,
-    "group": "root",
-    "privileged": true,
-    "uid": 0,
-    "user": "root"
+    "gid": 1000,
+    "group": "ec2-user",
+    "privileged": false,
+    "uid": 1000,
+    "user": "ec2-user"
   },
-  "init_systems": [
-    "rc",
-    "systemd",
-    "sysv"
-  ],
   "interfaces": "eth0,lo",
   "ipaddress": "10.0.2.15",
+  "ipaddress6": "fe80::433:83ff:fe31:d808",
+  "ipaddress6_eth0": "fe80::433:83ff:fe31:d808",
   "ipaddress6_lo": "::1",
   "ipaddress_eth0": "10.0.2.15",
   "ipaddress_lo": "127.0.0.1",
-  "ipv6_enabled": false,
-  "is_pe": false,
   "is_virtual": true,
-  "java_default_home": ".",
   "kernel": "Linux",
   "kernelmajversion": "3.10",
-  "kernelrelease": "3.10.0-514.26.2.el7.x86_64",
+  "kernelrelease": "3.10.0-862.11.6.el7.x86_64",
   "kernelversion": "3.10.0",
   "load_averages": {
-    "15m": 0.26,
-    "1m": 1.45,
-    "5m": 0.67
+    "15m": 0.39,
+    "1m": 1.39,
+    "5m": 0.74
   },
-  "macaddress": "42:01:0a:8e:00:02",
-  "macaddress_eth0": "42:01:0a:8e:00:02",
-  "manufacturer": "Google",
-  "mco_version": "2.9.1",
+  "macaddress": "06:33:83:31:d8:08",
+  "macaddress_eth0": "06:33:83:31:d8:08",
+  "manufacturer": "Xen",
   "memory": {
     "system": {
-      "available": "1.32 GiB",
-      "available_bytes": 1413644288,
-      "capacity": "20.54%",
-      "total": "1.66 GiB",
-      "total_bytes": 1779105792,
-      "used": "348.53 MiB",
-      "used_bytes": 365461504
+      "available": "688.63 MiB",
+      "available_bytes": 722083840,
+      "capacity": "30.45%",
+      "total": "990.11 MiB",
+      "total_bytes": 1038200832,
+      "used": "301.47 MiB",
+      "used_bytes": 316116992
     }
   },
-  "memoryfree": "1.32 GiB",
-  "memoryfree_mb": 1348.15625,
-  "memorysize": "1.66 GiB",
-  "memorysize_mb": 1696.6875,
+  "memoryfree": "688.63 MiB",
+  "memoryfree_mb": 688.6328125,
+  "memorysize": "990.11 MiB",
+  "memorysize_mb": 990.10546875,
   "mountpoints": {
     "/": {
-      "available": "7.63 GiB",
-      "available_bytes": 8187293696,
-      "capacity": "23.67%",
-      "device": "/dev/sda1",
+      "available": "8.18 GiB",
+      "available_bytes": 8779272192,
+      "capacity": "18.14%",
+      "device": "/dev/xvda2",
       "filesystem": "xfs",
       "options": [
         "rw",
@@ -365,13 +166,13 @@
         "noquota"
       ],
       "size": "9.99 GiB",
-      "size_bytes": 10725883904,
-      "used": "2.36 GiB",
-      "used_bytes": 2538590208
+      "size_bytes": 10724814848,
+      "used": "1.81 GiB",
+      "used_bytes": 1945542656
     },
     "/dev/shm": {
-      "available": "848.34 MiB",
-      "available_bytes": 889552896,
+      "available": "495.05 MiB",
+      "available_bytes": 519098368,
       "capacity": "0%",
       "device": "tmpfs",
       "filesystem": "tmpfs",
@@ -381,15 +182,15 @@
         "nosuid",
         "nodev"
       ],
-      "size": "848.34 MiB",
-      "size_bytes": 889552896,
+      "size": "495.05 MiB",
+      "size_bytes": 519098368,
       "used": "0 bytes",
       "used_bytes": 0
     },
     "/run": {
-      "available": "840.13 MiB",
-      "available_bytes": 880943104,
-      "capacity": "0.97%",
+      "available": "482.17 MiB",
+      "available_bytes": 505589760,
+      "capacity": "2.60%",
       "device": "tmpfs",
       "filesystem": "tmpfs",
       "options": [
@@ -399,14 +200,14 @@
         "nodev",
         "mode=755"
       ],
-      "size": "848.34 MiB",
-      "size_bytes": 889552896,
-      "used": "8.21 MiB",
-      "used_bytes": 8609792
+      "size": "495.05 MiB",
+      "size_bytes": 519098368,
+      "used": "12.88 MiB",
+      "used_bytes": 13508608
     },
-    "/run/user/1000": {
-      "available": "169.67 MiB",
-      "available_bytes": 177913856,
+    "/run/user/0": {
+      "available": "99.01 MiB",
+      "available_bytes": 103821312,
       "capacity": "0%",
       "device": "tmpfs",
       "filesystem": "tmpfs",
@@ -416,19 +217,39 @@
         "nosuid",
         "nodev",
         "relatime",
-        "size=173744k",
+        "size=101388k",
+        "mode=700"
+      ],
+      "size": "99.01 MiB",
+      "size_bytes": 103821312,
+      "used": "0 bytes",
+      "used_bytes": 0
+    },
+    "/run/user/1000": {
+      "available": "99.01 MiB",
+      "available_bytes": 103821312,
+      "capacity": "0%",
+      "device": "tmpfs",
+      "filesystem": "tmpfs",
+      "options": [
+        "rw",
+        "seclabel",
+        "nosuid",
+        "nodev",
+        "relatime",
+        "size=101388k",
         "mode=700",
         "uid=1000",
-        "gid=1001"
+        "gid=1000"
       ],
-      "size": "169.67 MiB",
-      "size_bytes": 177913856,
+      "size": "99.01 MiB",
+      "size_bytes": 103821312,
       "used": "0 bytes",
       "used_bytes": 0
     },
     "/sys/fs/cgroup": {
-      "available": "848.34 MiB",
-      "available_bytes": 889552896,
+      "available": "495.05 MiB",
+      "available_bytes": 519098368,
       "capacity": "0%",
       "device": "tmpfs",
       "filesystem": "tmpfs",
@@ -440,25 +261,27 @@
         "noexec",
         "mode=755"
       ],
-      "size": "848.34 MiB",
-      "size_bytes": 889552896,
+      "size": "495.05 MiB",
+      "size_bytes": 519098368,
       "used": "0 bytes",
       "used_bytes": 0
     }
   },
-  "mtu_eth0": 1460,
+  "mtu_eth0": 9001,
   "mtu_lo": 65536,
-  "mysql_server_id": 3203074,
   "netmask": "255.255.255.0",
+  "netmask6": "ffff:ffff:ffff:ffff::",
+  "netmask6_eth0": "ffff:ffff:ffff:ffff::",
   "netmask6_lo": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
   "netmask_eth0": "255.255.255.0",
   "netmask_lo": "255.0.0.0",
   "network": "10.0.2.0",
+  "network6": "fe80::",
+  "network6_eth0": "fe80::",
   "network6_lo": "::1",
   "network_eth0": "10.0.2.0",
   "network_lo": "127.0.0.0",
   "networking": {
-    "dhcp": "10.0.2.2",
     "domain": "example.com",
     "fqdn": "foo.example.com",
     "hostname": "foo",
@@ -471,12 +294,21 @@
             "network": "10.0.2.0"
           }
         ],
-        "dhcp": "10.0.2.2",
+        "bindings6": [
+          {
+            "address": "fe80::433:83ff:fe31:d808",
+            "netmask": "ffff:ffff:ffff:ffff::",
+            "network": "fe80::"
+          }
+        ],
         "ip": "10.0.2.15",
-        "mac": "42:01:0a:8e:00:02",
-        "mtu": 1460,
+        "ip6": "fe80::433:83ff:fe31:d808",
+        "mac": "06:33:83:31:d8:08",
+        "mtu": 9001,
         "netmask": "255.255.255.0",
-        "network": "10.0.2.0"
+        "netmask6": "ffff:ffff:ffff:ffff::",
+        "network": "10.0.2.0",
+        "network6": "fe80::"
       },
       "lo": {
         "bindings": [
@@ -503,302 +335,64 @@
       }
     },
     "ip": "10.0.2.15",
-    "mac": "42:01:0a:8e:00:02",
-    "mtu": 1460,
+    "ip6": "fe80::433:83ff:fe31:d808",
+    "mac": "06:33:83:31:d8:08",
+    "mtu": 9001,
     "netmask": "255.255.255.0",
+    "netmask6": "ffff:ffff:ffff:ffff::",
     "network": "10.0.2.0",
+    "network6": "fe80::",
     "primary": "eth0"
   },
-  "openldap_arch": "i386",
-  "openssh_version": "6.6.1",
+  "openssh_version": "7.4",
   "operatingsystem": "RedHat",
   "operatingsystemmajrelease": "7",
-  "operatingsystemrelease": "7.3",
+  "operatingsystemrelease": "7.5",
   "os": {
     "architecture": "x86_64",
     "family": "RedHat",
     "hardware": "x86_64",
     "name": "RedHat",
     "release": {
-      "full": "7.3",
+      "full": "7.5",
       "major": "7",
-      "minor": "3"
+      "minor": "5"
     },
     "selinux": {
       "config_mode": "enforcing",
+      "config_policy": "targeted",
       "current_mode": "enforcing",
       "enabled": true,
       "enforced": true,
-      "policy_version": "28"
+      "policy_version": "31"
     }
   },
   "osfamily": "RedHat",
-  "package_provider": "yum",
   "partitions": {
-    "/dev/sda1": {
-      "filesystem": "xfs",
-      "label": "/",
+    "/dev/xvda1": {
+      "size": "1.00 MiB",
+      "size_bytes": 1048576
+    },
+    "/dev/xvda2": {
       "mount": "/",
       "size": "10.00 GiB",
-      "size_bytes": 10736369664,
-      "uuid": "ba747b8e-efdb-4a17-bd5b-b80ef667b244"
+      "size_bytes": 10735304192
     }
   },
-  "path": "/opt/puppetlabs/bin:/usr/local/sbin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin",
+  "path": "/opt/puppetlabs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/sbin",
   "physicalprocessorcount": 1,
-  "processor0": "Intel(R) Xeon(R) CPU @ 2.30GHz",
+  "processor0": "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz",
   "processorcount": 1,
   "processors": {
     "count": 1,
     "isa": "x86_64",
     "models": [
-      "Intel(R) Xeon(R) CPU @ 2.30GHz"
+      "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz"
     ],
     "physicalcount": 1
   },
-  "productname": "Google Compute Engine",
-  "puppet_environmentpath": "/etc/puppetlabs/code/environments",
-  "puppet_ruby_dir": "/opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet",
-  "puppet_settings": {
-    "main": {
-      "cfacter": "false",
-      "confdir": "/etc/puppetlabs/puppet",
-      "codedir": "/etc/puppetlabs/code",
-      "vardir": "/opt/puppetlabs/puppet/cache",
-      "name": "facts",
-      "logdir": "/var/log/puppetlabs/puppet",
-      "log_level": "notice",
-      "disable_warnings": "[]",
-      "strict": "warning",
-      "priority": "",
-      "trace": "false",
-      "profile": "false",
-      "static_catalogs": "true",
-      "strict_environment_mode": "false",
-      "autoflush": "true",
-      "syslogfacility": "daemon",
-      "statedir": "/opt/puppetlabs/puppet/cache/state",
-      "rundir": "/var/run/puppetlabs",
-      "genconfig": "false",
-      "genmanifest": "false",
-      "configprint": "",
-      "color": "ansi",
-      "mkusers": "false",
-      "manage_internal_file_permissions": "true",
-      "onetime": "false",
-      "path": "none",
-      "libdir": "/opt/puppetlabs/puppet/cache/lib",
-      "environment": "production",
-      "environmentpath": "/etc/puppetlabs/code/environments",
-      "always_cache_features": "false",
-      "always_retry_plugins": "true",
-      "diff_args": "-u",
-      "diff": "diff",
-      "show_diff": "false",
-      "daemonize": "true",
-      "maximum_uid": "4294967290",
-      "route_file": "/etc/puppetlabs/puppet/routes.yaml",
-      "node_terminus": "plain",
-      "node_cache_terminus": "",
-      "data_binding_terminus": "hiera",
-      "hiera_config": "/etc/puppetlabs/puppet/hiera.yaml",
-      "binder_config": "",
-      "catalog_terminus": "compiler",
-      "catalog_cache_terminus": "",
-      "facts_terminus": "facter",
-      "default_file_terminus": "rest",
-      "http_proxy_host": "none",
-      "http_proxy_port": "3128",
-      "http_proxy_user": "none",
-      "http_proxy_password": "none",
-      "http_keepalive_timeout": "4",
-      "http_debug": "false",
-      "http_connect_timeout": "120",
-      "http_read_timeout": "",
-      "filetimeout": "15",
-      "environment_timeout": "0",
-      "environment_data_provider": "none",
-      "prerun_command": "",
-      "postrun_command": "",
-      "freeze_main": "false",
-      "trusted_server_facts": "false",
-      "preview_outputdir": "/opt/puppetlabs/puppet/cache/preview",
-      "app_management": "false",
-      "certname": "foo.example.com",
-      "dns_alt_names": "",
-      "csr_attributes": "/etc/puppetlabs/puppet/csr_attributes.yaml",
-      "certdir": "/etc/puppetlabs/puppet/ssl/certs",
-      "ssldir": "/etc/puppetlabs/puppet/ssl",
-      "publickeydir": "/etc/puppetlabs/puppet/ssl/public_keys",
-      "requestdir": "/etc/puppetlabs/puppet/ssl/certificate_requests",
-      "privatekeydir": "/etc/puppetlabs/puppet/ssl/private_keys",
-      "privatedir": "/etc/puppetlabs/puppet/ssl/private",
-      "passfile": "/etc/puppetlabs/puppet/ssl/private/password",
-      "hostcsr": "/etc/puppetlabs/puppet/ssl/csr_foo.example.com.pem",
-      "hostcert": "/etc/puppetlabs/puppet/ssl/certs/foo.example.com.pem",
-      "hostprivkey": "/etc/puppetlabs/puppet/ssl/private_keys/foo.example.com.pem",
-      "hostpubkey": "/etc/puppetlabs/puppet/ssl/public_keys/foo.example.com.pem",
-      "localcacert": "/etc/puppetlabs/puppet/ssl/certs/ca.pem",
-      "ssl_client_ca_auth": "",
-      "ssl_server_ca_auth": "",
-      "hostcrl": "/etc/puppetlabs/puppet/ssl/crl.pem",
-      "certificate_revocation": "true",
-      "digest_algorithm": "md5",
-      "supported_checksum_types": "[\"md5\", \"sha256\"]",
-      "plugindest": "/opt/puppetlabs/puppet/cache/lib",
-      "pluginsource": "puppet:///plugins",
-      "pluginfactdest": "/opt/puppetlabs/puppet/cache/facts.d",
-      "pluginfactsource": "puppet:///pluginfacts",
-      "pluginsync": "true",
-      "pluginsignore": ".svn CVS .git",
-      "factpath": "/opt/puppetlabs/puppet/cache/lib/facter:/opt/puppetlabs/puppet/cache/facts",
-      "external_nodes": "none",
-      "rich_data": "false"
-    },
-    "module_tool": {
-      "module_repository": "https://forgeapi.puppet.com",
-      "module_working_dir": "/opt/puppetlabs/puppet/cache/puppet-module",
-      "module_skeleton_dir": "/opt/puppetlabs/puppet/cache/puppet-module/skeleton",
-      "forge_authorization": "",
-      "module_groups": ""
-    },
-    "ca": {
-      "ca_name": "Puppet CA: foo.example.com",
-      "cadir": "/etc/puppetlabs/puppet/ssl/ca",
-      "cacert": "/etc/puppetlabs/puppet/ssl/ca/ca_crt.pem",
-      "cakey": "/etc/puppetlabs/puppet/ssl/ca/ca_key.pem",
-      "capub": "/etc/puppetlabs/puppet/ssl/ca/ca_pub.pem",
-      "cacrl": "/etc/puppetlabs/puppet/ssl/ca/ca_crl.pem",
-      "caprivatedir": "/etc/puppetlabs/puppet/ssl/ca/private",
-      "csrdir": "/etc/puppetlabs/puppet/ssl/ca/requests",
-      "signeddir": "/etc/puppetlabs/puppet/ssl/ca/signed",
-      "capass": "/etc/puppetlabs/puppet/ssl/ca/private/ca.pass",
-      "serial": "/etc/puppetlabs/puppet/ssl/ca/serial",
-      "autosign": "/etc/puppetlabs/puppet/autosign.conf",
-      "allow_duplicate_certs": "false",
-      "ca_ttl": "157680000",
-      "keylength": "4096",
-      "cert_inventory": "/etc/puppetlabs/puppet/ssl/ca/inventory.txt"
-    },
-    "application": {
-      "config_file_name": "puppet.conf",
-      "config": "/etc/puppetlabs/puppet/puppet.conf",
-      "pidfile": "/var/run/puppetlabs/user.pid",
-      "bindaddress": "0.0.0.0"
-    },
-    "environment": {
-      "manifest": "",
-      "modulepath": "",
-      "config_version": ""
-    },
-    "master": {
-      "user": "puppet",
-      "group": "puppet",
-      "default_manifest": "./manifests",
-      "disable_per_environment_manifest": "false",
-      "code": "",
-      "masterhttplog": "/var/log/puppetlabs/puppet/masterhttp.log",
-      "masterport": "8140",
-      "node_name": "cert",
-      "bucketdir": "/opt/puppetlabs/puppet/cache/bucket",
-      "rest_authconfig": "/etc/puppetlabs/puppet/auth.conf",
-      "ca": "true",
-      "trusted_oid_mapping_file": "/etc/puppetlabs/puppet/custom_trusted_oid_mapping.yaml",
-      "basemodulepath": "/etc/puppetlabs/code/modules:/opt/puppetlabs/puppet/modules",
-      "ssl_client_header": "HTTP_X_CLIENT_DN",
-      "ssl_client_verify_header": "HTTP_X_CLIENT_VERIFY",
-      "yamldir": "/opt/puppetlabs/puppet/cache/yaml",
-      "server_datadir": "/opt/puppetlabs/puppet/cache/server_data",
-      "reports": "store",
-      "reportdir": "/opt/puppetlabs/puppet/cache/reports",
-      "reporturl": "http://localhost:3000/reports/upload",
-      "fileserverconfig": "/etc/puppetlabs/puppet/fileserver.conf",
-      "strict_hostname_checking": "false",
-      "storeconfigs": "false",
-      "storeconfigs_backend": "puppetdb"
-    },
-    "device": {
-      "devicedir": "/opt/puppetlabs/puppet/cache/devices",
-      "deviceconfig": "/etc/puppetlabs/puppet/device.conf"
-    },
-    "agent": {
-      "node_name_value": "foo.example.com",
-      "node_name_fact": "",
-      "statefile": "/opt/puppetlabs/puppet/cache/state/state.yaml",
-      "transactionstorefile": "/opt/puppetlabs/puppet/cache/state/transactionstore.yaml",
-      "clientyamldir": "/opt/puppetlabs/puppet/cache/client_yaml",
-      "client_datadir": "/opt/puppetlabs/puppet/cache/client_data",
-      "classfile": "/opt/puppetlabs/puppet/cache/state/classes.txt",
-      "resourcefile": "/opt/puppetlabs/puppet/cache/state/resources.txt",
-      "puppetdlog": "/var/log/puppetlabs/puppet/puppetd.log",
-      "server": "puppet",
-      "server_list": "[]",
-      "use_srv_records": "false",
-      "srv_domain": "example.com",
-      "ignoreschedules": "false",
-      "default_schedules": "true",
-      "noop": "false",
-      "runinterval": "1800",
-      "ca_server": "puppet",
-      "ca_port": "8140",
-      "preferred_serialization_format": "pson",
-      "agent_catalog_run_lockfile": "/opt/puppetlabs/puppet/cache/state/agent_catalog_run.lock",
-      "agent_disabled_lockfile": "/opt/puppetlabs/puppet/cache/state/agent_disabled.lock",
-      "usecacheonfailure": "true",
-      "use_cached_catalog": "false",
-      "ignoremissingtypes": "false",
-      "splaylimit": "1800",
-      "splay": "false",
-      "clientbucketdir": "/opt/puppetlabs/puppet/cache/clientbucket",
-      "report_server": "puppet",
-      "report_port": "8140",
-      "report": "true",
-      "lastrunfile": "/opt/puppetlabs/puppet/cache/state/last_run_summary.yaml",
-      "lastrunreport": "/opt/puppetlabs/puppet/cache/state/last_run_report.yaml",
-      "graph": "false",
-      "graphdir": "/opt/puppetlabs/puppet/cache/state/graphs",
-      "waitforcert": "120",
-      "ordering": "manifest"
-    },
-    "inspect": {
-      "archive_files": "false",
-      "archive_file_server": "puppet"
-    },
-    "transaction": {
-      "tags": "",
-      "skip_tags": "",
-      "evaltrace": "false",
-      "summarize": "false"
-    },
-    "ldap": {
-      "ldapssl": "false",
-      "ldaptls": "false",
-      "ldapserver": "ldap",
-      "ldapport": "389",
-      "ldapstring": "(&(objectclass=puppetClient)(cn=%s))",
-      "ldapclassattrs": "puppetclass",
-      "ldapstackedattrs": "puppetvar",
-      "ldapattrs": "all",
-      "ldapparentattr": "parentnode",
-      "ldapuser": "",
-      "ldappassword": "",
-      "ldapbase": ""
-    },
-    "parser": {
-      "max_errors": "10",
-      "max_warnings": "10",
-      "max_deprecations": "10",
-      "strict_variables": "false"
-    },
-    "puppetdoc": {
-      "document_all": "false"
-    }
-  },
-  "puppet_vardir": "/opt/puppetlabs/puppet/cache",
+  "productname": "HVM domU",
   "puppetversion": "4.8.2",
-  "radius_version": "unknown",
-  "reboot_required": false,
-  "root_home": "/root",
   "ruby": {
     "platform": "x86_64-linux",
     "sitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0",
@@ -807,61 +401,56 @@
   "rubyplatform": "x86_64-linux",
   "rubysitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0",
   "rubyversion": "2.1.9",
-  "runlevel": "3",
   "selinux": true,
   "selinux_config_mode": "enforcing",
+  "selinux_config_policy": "targeted",
   "selinux_current_mode": "enforcing",
   "selinux_enforced": true,
-  "selinux_policyversion": "28",
-  "serialnumber": "GoogleCloud-A56C29CFE7D025A01DB2B9BD20258577",
-  "service_provider": "systemd",
-  "shmall": "18446744073692774399",
+  "selinux_policyversion": "31",
   "ssh": {
     "ecdsa": {
       "fingerprints": {
-        "sha1": "SSHFP 3 1 0a5ce539b94a39b9c58add1ea1672eeb52fd98f4",
-        "sha256": "SSHFP 3 2 b8043b4968981cf4f31d68516f74b81aa94888adb97e930c4eefd7de79c26144"
+        "sha1": "SSHFP 3 1 70b56a7c77b443edb1455ed9ccf92951af91d73f",
+        "sha256": "SSHFP 3 2 a0a092ca539ebcdf1d1e3adf209744cf886778d652fb5cdab2f2f3342a8a4ca8"
       },
-      "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN9pquUegdq7PnKCKS13MIhohk2XqKomFUup5bHkUb6ZtyrQFV91vITlXyOp7Hn3PotOMoPRShvn7Sx35JnJafU="
+      "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCSzkczv9a0sYC1gvM4LNc/DQf+mwbC2ACFdT3/vyOfjnNvXR2jOiodhpTcWy1cCaO/QwBKELGiRvRT4u9dPA6I="
     },
     "ed25519": {
       "fingerprints": {
-        "sha1": "SSHFP 4 1 9aab50e817e23e87e4b3963ebcd8cbd72ef47c0f",
-        "sha256": "SSHFP 4 2 cad4fceb1fe3a73ab39c1060492e04d0f738c83005e157cfb17990096d9986c0"
+        "sha1": "SSHFP 4 1 40b2a1544a0e7350d195988b8e6a0d273845cc41",
+        "sha256": "SSHFP 4 2 ad709b7f24cc72725baa80b9c65a55ab80a8137b21a7b553cbd113ed3ec0e96a"
       },
-      "key": "AAAAC3NzaC1lZDI1NTE5AAAAIGluNitkgwIjZR2I9YSoCT+ZyD31GwAJRgIPB2SR9j1I"
+      "key": "AAAAC3NzaC1lZDI1NTE5AAAAIPARDNfaD7nAAzJyjsLlIC088LVcuzv7KIxeQ8c4diFA"
     },
     "rsa": {
       "fingerprints": {
-        "sha1": "SSHFP 1 1 f51ba83fe4e606d497f0dcdcf71250efdeebb515",
-        "sha256": "SSHFP 1 2 625784b13da33b35b4695fb4fb92c8ba56cae4cacdf7e7688caf2d077dad06a0"
+        "sha1": "SSHFP 1 1 c6b76689be63a14eb8894d4d64250728c01f7c04",
+        "sha256": "SSHFP 1 2 2d82db0c60ddc00cdfd4d79a5ba0405769d29337a5c38226642bb7364bced356"
       },
-      "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ+0smqZu1k9Ba520GNIz2u8o6Kq8kRmVopfD0cWfCSnxH4zODXlvZ19VNBwRMn/kyDqzuZ9jRQ8RerbsA+HYaBxuCyBxWFQ6/2WyKfa6nijEwwhMeU2wsvlZlc3O09xUCAaoBMw7uHQ1/RLY8gv0+33+XX60IUlNQSAvp9OC9An+F3eNhzGjJBIPaERyhhkE4ibCkj8Q8MCo2rNb3beZZefAI3vJS7RxBWmN2LSvd9sg5rMtDTrXpj/RfDm+REQ4FmXv2ayLQ8mP6O/EAJTG2ZBQMe/wp6hIchmW/WrAcQ8OTDIcut68Lvow2coSqUdHGq9Fn4SQ63aVFh8HXRmWP"
+      "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDKZasGddJ0gavtrtJ8+WXQjFVNv3bZ0ehHfSvvlkx6CtSONWUbk/ra6nO+ecfAQlDL2w2sgJJ1f+eKv9+/VaV6rwCNy6V0QeREz+hsSjLJPan5qFmGNzZ2/DxfaVcq2b8sjVe5pw4RIR4z16CO7p/KPsU/xWBM4hN2J1HRtIF9+tF1SiYtqvEsyVN3pRA8/fntcle9DRIC+8Wg5BcYqLqsHxF0XPdd+vKaGi79qBVDXLopO1MXjUGTzyz44YrjWmpHJH5Hr6GN/u8Fa13y8yZ39KnXMYycps5Ntb8MFlHDVRQEoaOJVVHXuakCvcCtlxJ3l+yjOxvaOh/Dqq8zvIcl"
     }
   },
-  "sshecdsakey": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN9pquUegdq7PnKCKS13MIhohk2XqKomFUup5bHkUb6ZtyrQFV91vITlXyOp7Hn3PotOMoPRShvn7Sx35JnJafU=",
-  "sshed25519key": "AAAAC3NzaC1lZDI1NTE5AAAAIGluNitkgwIjZR2I9YSoCT+ZyD31GwAJRgIPB2SR9j1I",
-  "sshfp_ecdsa": "SSHFP 3 1 0a5ce539b94a39b9c58add1ea1672eeb52fd98f4\nSSHFP 3 2 b8043b4968981cf4f31d68516f74b81aa94888adb97e930c4eefd7de79c26144",
-  "sshfp_ed25519": "SSHFP 4 1 9aab50e817e23e87e4b3963ebcd8cbd72ef47c0f\nSSHFP 4 2 cad4fceb1fe3a73ab39c1060492e04d0f738c83005e157cfb17990096d9986c0",
-  "sshfp_rsa": "SSHFP 1 1 f51ba83fe4e606d497f0dcdcf71250efdeebb515\nSSHFP 1 2 625784b13da33b35b4695fb4fb92c8ba56cae4cacdf7e7688caf2d077dad06a0",
-  "sshrsakey": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ+0smqZu1k9Ba520GNIz2u8o6Kq8kRmVopfD0cWfCSnxH4zODXlvZ19VNBwRMn/kyDqzuZ9jRQ8RerbsA+HYaBxuCyBxWFQ6/2WyKfa6nijEwwhMeU2wsvlZlc3O09xUCAaoBMw7uHQ1/RLY8gv0+33+XX60IUlNQSAvp9OC9An+F3eNhzGjJBIPaERyhhkE4ibCkj8Q8MCo2rNb3beZZefAI3vJS7RxBWmN2LSvd9sg5rMtDTrXpj/RfDm+REQ4FmXv2ayLQ8mP6O/EAJTG2ZBQMe/wp6hIchmW/WrAcQ8OTDIcut68Lvow2coSqUdHGq9Fn4SQ63aVFh8HXRmWP",
+  "ssh_host_keys": [
+
+  ],
+  "sshecdsakey": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCSzkczv9a0sYC1gvM4LNc/DQf+mwbC2ACFdT3/vyOfjnNvXR2jOiodhpTcWy1cCaO/QwBKELGiRvRT4u9dPA6I=",
+  "sshed25519key": "AAAAC3NzaC1lZDI1NTE5AAAAIPARDNfaD7nAAzJyjsLlIC088LVcuzv7KIxeQ8c4diFA",
+  "sshfp_ecdsa": "SSHFP 3 1 70b56a7c77b443edb1455ed9ccf92951af91d73f\nSSHFP 3 2 a0a092ca539ebcdf1d1e3adf209744cf886778d652fb5cdab2f2f3342a8a4ca8",
+  "sshfp_ed25519": "SSHFP 4 1 40b2a1544a0e7350d195988b8e6a0d273845cc41\nSSHFP 4 2 ad709b7f24cc72725baa80b9c65a55ab80a8137b21a7b553cbd113ed3ec0e96a",
+  "sshfp_rsa": "SSHFP 1 1 c6b76689be63a14eb8894d4d64250728c01f7c04\nSSHFP 1 2 2d82db0c60ddc00cdfd4d79a5ba0405769d29337a5c38226642bb7364bced356",
+  "sshrsakey": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDKZasGddJ0gavtrtJ8+WXQjFVNv3bZ0ehHfSvvlkx6CtSONWUbk/ra6nO+ecfAQlDL2w2sgJJ1f+eKv9+/VaV6rwCNy6V0QeREz+hsSjLJPan5qFmGNzZ2/DxfaVcq2b8sjVe5pw4RIR4z16CO7p/KPsU/xWBM4hN2J1HRtIF9+tF1SiYtqvEsyVN3pRA8/fntcle9DRIC+8Wg5BcYqLqsHxF0XPdd+vKaGi79qBVDXLopO1MXjUGTzyz44YrjWmpHJH5Hr6GN/u8Fa13y8yZ39KnXMYycps5Ntb8MFlHDVRQEoaOJVVHXuakCvcCtlxJ3l+yjOxvaOh/Dqq8zvIcl",
   "system_uptime": {
     "days": 0,
     "hours": 0,
-    "seconds": 207,
-    "uptime": "0:03 hours"
+    "seconds": 2318,
+    "uptime": "0:38 hours"
   },
   "timezone": "UTC",
-  "tmp_mount_dev_shm": "rw,seclabel,nosuid,nodev",
-  "tmp_mount_fstype_dev_shm": "tmpfs",
-  "tmp_mount_path_dev_shm": "tmpfs",
-  "uid_min": "1000",
-  "uptime": "0:03 hours",
+  "uptime": "0:38 hours",
   "uptime_days": 0,
   "uptime_hours": 0,
-  "uptime_seconds": 207,
-  "uuid": "A56C29CF-E7D0-25A0-1DB2-B9BD20258577",
-  "virtual": "gce",
+  "uptime_seconds": 2318,
+  "virtual": "xenu",
   "clientcert": "foo.example.com",
   "clientversion": "4.8.2",
   "clientnoop": false
